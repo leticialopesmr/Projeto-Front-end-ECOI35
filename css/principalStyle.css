@@ -65,12 +65,12 @@ body {
 #inicial h1{
     padding-top: 150px;
     font-size: 100px;
-    color: whitesmoke;
+    color: orange;
 }
 #inicial p{
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 196, 0);
 }
 
 

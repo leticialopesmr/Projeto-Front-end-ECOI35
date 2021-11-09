@@ -122,7 +122,7 @@ body {
 #planos h2{
     font-size: 60px;
     font-weight: bold;
-    color:black;
+    color:white;
     padding-top: 80px;
 }
 #plano p{
@@ -166,18 +166,26 @@ body {
     
 }
 
-
 footer{
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
+#footerSobre h4{
+    font-size: 20px;
+}
+#footerRedes h4{
+    font-size: 20px;
+}
+
+
 #footerSobre{
     width: 400px;
 }
-#footerSobre h2{
-    font-size: 25px;
-}
-#footerRedes h2{
-    font-size: 25px;
+#footerRedes{
+    padding-left: 200px;
+    padding-right: 90px;
 }

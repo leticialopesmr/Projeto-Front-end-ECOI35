@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+#navBar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    font-weight: bold;
+    font-size: 25px;
+    color: #8B008B;
+    background-color: white;
+
+  }
+body {
+    height: 500px;
+  }
+
+
+#navBar ul{
+    list-style-type: none; /*tira o marcador do item */
+    padding-left: 180px;
+}
+
+#navBar ul li{
+    display:inline-block;
+    padding-top: 25px;
+    padding-left: 40px;
+
+}
+
+#navBar ul li :hover{
+    display:inline-block;
+    padding: 10px;
+    background-color: #B8860B;
+    border: black;
+    border-radius: 15px;
+    color:white;
+}
+
+#navBar ul li :active{
+    display:inline-block;
+    padding: 10px;
+    background-color: #8B008B;
+    border: black;
+    border-radius: 15px;
+    color:white;
+}
+
+#inicial{
+    background-image:url(/img/bliblioteca2.jfif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    padding: 100px;
+    text-align: center;
+}
+
+#inicial h1{
+    padding-top: 150px;
+    font-size: 100px;
+    color: whitesmoke;
+}
+#inicial p{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+#oBox{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    background-color: #008080;
+    height: 900px;
+}
+
+#imagemBox{
+    display: inline-block;
+    padding: 50px;
+}
+
+#comoFunciona{
+    display: inline-block;
+    padding: 50px;
+}
+
+#sobreNos{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: #8B008B;
+    padding-top: 200px;
+}
+
+#sobreNos h2{
+    font-size: 90px;
+    color: #B8860B;
+    font-weight: bold;
+    text-align: center;
+}
+
+#planos{
+    background-image: url(/img/fundoPlanos3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    height: 800px;
+}
+#aprePlanos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#planos h2{
+    font-size: 60px;
+    font-weight: bold;
+    color:black;
+    padding-top: 80px;
+}
+#plano p{
+    font-size: 25px;
+    color: #B8860B;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#plano h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: #8B008B;
+}
+
+#plano{
+    border: black;
+    background-color: white;
+    width: 300px;
+    height: 320px;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#boxMes{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background-color: #B8860B;
+    padding-top: 80px;
+}
+#conteudoMes{
+    font-size: 30px;
+    width: 800px;
+    padding-top: 100px;
+}
+#imagemMes{
+    align-items: center;
+    padding-top: 100px;
+    
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+#footerSobre{
+    width: 400px;
+}
+#footerSobre h2{
+    font-size: 25px;
+}
+#footerRedes h2{
+    font-size: 25px;
+}

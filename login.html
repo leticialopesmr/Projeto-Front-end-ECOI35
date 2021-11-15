@@ -35,13 +35,13 @@ Ana Letícia Lopes Moreira    RA:2018013951
         <form>
             <div class="form-group">
             <label>E-mail</label>
-            <input class="form-control" type="email" name="email" id="email" [(ngModel)]="account.email" required />
+            <input class="form-control" type="email" name="email" id="email"  required />
             </div>
             <div class="form-group">
             <label>Senha</label>
-            <input class="form-control" type="password" name="password" id="password" [(ngModel)]="account.password" required />
+            <input class="form-control" type="senha" name="senha" id="senha" required />
             </div>
-          <button type="submit">Entrar</button>
+          <button type="submit" onclick="checkLogin()">Entrar</button>
         </form>
         <a href="/cadastro.html"><p>Ainda não tenho cadastro</p></a><!--Envia para a pagina de cadastro -->
     </div>

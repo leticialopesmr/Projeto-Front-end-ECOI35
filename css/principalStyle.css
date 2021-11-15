@@ -8,8 +8,12 @@ a {
   color: inherit;
 }
 
-p{
-    font-family: 'Jura', sans-serif;
+p {
+  font-family: "Jura", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 nav {
@@ -18,7 +22,7 @@ nav {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
   background: white;
   height: 10vh;
   color: #8b008b;
@@ -26,17 +30,16 @@ nav {
   font-size: 25px;
 }
 
-.mobileNav{
+.mobileNav {
   display: none;
   cursor: pointer;
-
 }
 
-@media (max-width:999px){
-  body{
+@media (max-width: 999px) {
+  body {
     overflow-x: hidden;
   }
-  .navList{
+  .navList {
     position: absolute;
     top: 8vh;
     right: 0;
@@ -49,19 +52,18 @@ nav {
     justify-content: space-around;
     transform: translateX(100%);
   }
-  .navList li{
+  .navList li {
     margin-left: 0;
   }
-  .mobileMenu{
+  .mobileMenu {
     display: block;
   }
 }
 
-.navList.active{
+.navList.active {
   transform: translateX(0);
-
 }
-.mobileNav div{
+.mobileNav div {
   width: 32px;
   height: 2px;
   background-color: black;
@@ -113,14 +115,13 @@ body {
   padding-top: 130px;
   font-size: 120px;
   color: whitesmoke;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 #inicial p {
   font-size: 50px;
   font-weight: bold;
   color: white;
-  font-family: 'Jura', sans-serif;
-
+  font-family: "Jura", sans-serif;
 }
 
 #inicial button {
@@ -152,7 +153,7 @@ body {
 
 #comoFunciona h2 {
   font-size: 70px;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 
 #comoFunciona p {
@@ -166,31 +167,31 @@ body {
   background-color: #8b008b;
   padding-top: 100px;
 }
-#infSobreNos{
-    width: 92vh;
-    padding-right: 200px;
+#infSobreNos {
+  width: 92vh;
+  padding-right: 200px;
 }
 #infSobreNos h2 {
   font-size: 70px;
   color: #b8860b;
   font-weight: bold;
   text-align: center;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 #infSobreNos p {
-    font-size: 25px;
-    color:white;
-    font-weight: bold;
-    text-align: justify;
-    padding-left: 20px;
-  }
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  padding-left: 20px;
+}
 
-#imageSobreNos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    font-weight: bold;
+#imageSobreNos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 #planos {
@@ -212,7 +213,7 @@ body {
   color: white;
   padding-top: 120px;
   padding-bottom: 20px;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 #plano p {
   font-size: 25px;
@@ -225,14 +226,17 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: #8b008b;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 
 #plano {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   border: black;
   background-color: white;
   width: 40vh;
-  height: 40vh;
+  height: 46vh;
   margin: 40px;
   padding: 10px;
   border-radius: 10px;
@@ -246,7 +250,6 @@ body {
   border: solid;
   border-radius: 10px;
 }
-
 
 #boxMes {
   display: flex;
@@ -262,7 +265,7 @@ body {
 #conteudoMes h2 {
   font-size: 70px;
   padding-left: 20px;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 
 #conteudoMes p {
@@ -275,43 +278,42 @@ body {
   padding-top: 100px;
 }
 
-
 #cadastrarEmail {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    height: 15vh;
-  }
-  
-  #cadastrarEmail h3 {
-    font-size: 35px;
-    padding-bottom: 5px;
-    font-family: 'Concert One', cursive;
-  }
-  
-  #formsEmail {
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
-    font-size: 20px;
-    padding-left: 200px;
-  }
-  
-  .form-group {
-    display: inline-block;
-    padding-left: 20px;
-  }
-  
-  #formsEmail button {
-    font-size: 13px;
-    height: 30px;
-    width: 100px;
-    font-weight: bold;
-    border: solid;
-    border-radius: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 15vh;
+}
+
+#cadastrarEmail h3 {
+  font-size: 35px;
+  padding-bottom: 5px;
+  font-family: "Concert One", cursive;
+}
+
+#formsEmail {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  font-size: 20px;
+  padding-left: 200px;
+}
+
+.form-group {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+#formsEmail button {
+  font-size: 13px;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  border: solid;
+  border-radius: 10px;
+}
 
 footer {
   display: flex;
@@ -327,7 +329,6 @@ footer {
 }
 #footerRedes h4 {
   font-size: 20px;
-
 }
 
 #footerSobre {

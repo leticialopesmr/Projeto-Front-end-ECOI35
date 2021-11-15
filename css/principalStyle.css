@@ -1,191 +1,339 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-#navBar {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    font-weight: bold;
-    font-size: 25px;
-    color: #8B008B;
-    background-color: white;
 
+p{
+    font-family: 'Jura', sans-serif;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Jura', sans-serif;
+  background: white;
+  height: 10vh;
+  color: #8b008b;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mobileNav{
+  display: none;
+  cursor: pointer;
+
+}
+
+@media (max-width:999px){
+  body{
+    overflow-x: hidden;
   }
-body {
-    height: 500px;
-  }
-
-
-#navBar ul{
-    list-style-type: none; /*tira o marcador do item */
-    padding-left: 180px;
-}
-
-#navBar ul li{
-    display:inline-block;
-    padding-top: 25px;
-    padding-left: 40px;
-
-}
-
-#navBar ul li :hover{
-    display:inline-block;
-    padding: 10px;
-    background-color: #B8860B;
-    border: black;
-    border-radius: 15px;
-    color:white;
-}
-
-#navBar ul li :active{
-    display:inline-block;
-    padding: 10px;
-    background-color: #8B008B;
-    border: black;
-    border-radius: 15px;
-    color:white;
-}
-
-#inicial{
-    background-image:url(/img/bliblioteca2.jfif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 600px;
-    padding: 100px;
-    text-align: center;
-}
-
-#inicial h1{
-    padding-top: 150px;
-    font-size: 100px;
-    color: whitesmoke;
-}
-#inicial p{
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-
-
-#oBox{
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-    background-color: #008080;
-    height: 900px;
-}
-
-#imagemBox{
-    display: inline-block;
-    padding: 50px;
-}
-
-#comoFunciona{
-    display: inline-block;
-    padding: 50px;
-}
-
-#sobreNos{
-    display: flex;
-    flex-direction: row;
-    height: 800px;
-    background-color: #8B008B;
-    padding-top: 200px;
-}
-
-#sobreNos h2{
-    font-size: 90px;
-    color: #B8860B;
-    font-weight: bold;
-    text-align: center;
-}
-
-#planos{
-    background-image: url(/img/fundoPlanos3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: center;
-    height: 800px;
-}
-#aprePlanos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#planos h2{
-    font-size: 60px;
-    font-weight: bold;
-    color:white;
-    padding-top: 80px;
-}
-#plano p{
-    font-size: 25px;
-    color: #B8860B;
-    padding: 5px;
-    font-weight: bold;
-}
-
-#plano h3{
-    font-size: 40px;
-    font-weight: bold;
-    color: #8B008B;
-}
-
-#plano{
-    border: black;
+  .navList{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
     background-color: white;
-    width: 300px;
-    height: 320px;
-    margin: 40px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#boxMes{
-    display: flex;
-    flex-direction: row;
-    height: 800px;
-    background-color: #B8860B;
-    padding-top: 80px;
-}
-#conteudoMes{
-    font-size: 30px;
-    width: 800px;
-    padding-top: 100px;
-}
-#imagemMes{
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    
+    justify-content: space-around;
+    transform: translateX(100%);
+  }
+  .navList li{
+    margin-left: 0;
+  }
+  .mobileMenu{
+    display: block;
+  }
 }
 
-footer{
+.navList.active{
+  transform: translateX(0);
+
+}
+.mobileNav div{
+  width: 32px;
+  height: 2px;
+  background-color: black;
+  margin: 8px;
+}
+body {
+  height: 500px;
+}
+
+#navBar ul {
+  list-style-type: none;
+  padding-left: 180px;
+}
+
+#navBar ul li {
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+#navBar ul li :hover {
+  display: inline-block;
+  padding: 10px;
+  background-color: #b8860b;
+  border: black;
+  border-radius: 15px;
+  color: white;
+}
+
+#navBar ul li :active {
+  display: inline-block;
+  padding: 10px;
+  background-color: #8b008b;
+  border: black;
+  border-radius: 15px;
+  color: white;
+}
+
+#inicial {
+  background-image: url(/img/bliblioteca2.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  padding: 100px;
+  text-align: center;
+}
+
+#inicial h1 {
+  padding-top: 130px;
+  font-size: 120px;
+  color: whitesmoke;
+  font-family: 'Concert One', cursive;
+}
+#inicial p {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Jura', sans-serif;
+
+}
+
+#inicial button {
+  font-size: 15px;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  border: solid;
+  border-radius: 10px;
+}
+
+#oBox {
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+  background-color: #008080;
+  height: 92vh;
+}
+
+#imagemBox {
+  display: inline-block;
+  padding-top: 60px;
+}
+
+#comoFunciona {
+  display: inline-block;
+  padding: 70px;
+}
+
+#comoFunciona h2 {
+  font-size: 70px;
+  font-family: 'Concert One', cursive;
+}
+
+#comoFunciona p {
+  font-size: 25px;
+  text-align: justify;
+}
+#sobreNos {
+  display: flex;
+  flex-direction: row;
+  height: 92vh;
+  background-color: #8b008b;
+  padding-top: 100px;
+}
+#infSobreNos{
+    width: 92vh;
+    padding-right: 200px;
+}
+#infSobreNos h2 {
+  font-size: 70px;
+  color: #b8860b;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Concert One', cursive;
+}
+#infSobreNos p {
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+#imageSobreNos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#planos {
+  background-image: url(/img/fundoPlanos3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+#aprePlanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#planos h2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  font-family: 'Concert One', cursive;
+}
+#plano p {
+  font-size: 25px;
+  color: #b8860b;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#plano h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8b008b;
+  font-family: 'Concert One', cursive;
+}
+
+#plano {
+  border: black;
+  background-color: white;
+  width: 40vh;
+  height: 40vh;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#planos button {
+  font-size: 15px;
+  height: 7vh;
+  width: 14vh;
+  font-weight: bold;
+  border: solid;
+  border-radius: 10px;
+}
+
+
+#boxMes {
+  display: flex;
+  flex-direction: row;
+  height: 83vh;
+  background-color: #b8860b;
+}
+#conteudoMes {
+  width: 92vh;
+  padding-top: 100px;
+}
+
+#conteudoMes h2 {
+  font-size: 70px;
+  padding-left: 20px;
+  font-family: 'Concert One', cursive;
+}
+
+#conteudoMes p {
+  font-size: 25px;
+  padding-left: 20px;
+  text-align: justify;
+}
+#imagemMes {
+  align-items: center;
+  padding-top: 100px;
+}
+
+
+#cadastrarEmail {
     display: flex;
     flex-direction: row;
-    padding-left: 10px;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
-#footerSobre h4{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 15vh;
+  }
+  
+  #cadastrarEmail h3 {
+    font-size: 35px;
+    padding-bottom: 5px;
+    font-family: 'Concert One', cursive;
+  }
+  
+  #formsEmail {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
     font-size: 20px;
-}
-#footerRedes h4{
-    font-size: 20px;
-}
-
-
-#footerSobre{
-    width: 400px;
-}
-#footerRedes{
     padding-left: 200px;
-    padding-right: 90px;
+  }
+  
+  .form-group {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  
+  #formsEmail button {
+    font-size: 13px;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    border: solid;
+    border-radius: 10px;
+  }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  height: 20vh;
+}
+#footerSobre h4 {
+  font-size: 20px;
+}
+#footerRedes h4 {
+  font-size: 20px;
+
+}
+
+#footerSobre {
+  width: 45vh;
+}
+#footerRedes {
+  padding-left: 20vh;
+  padding-right: 20vh;
 }

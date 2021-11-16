@@ -1,5 +1,6 @@
 // Pagina JS da pagina de login.html .............
 //Ana Letícia Lopes Moreira    RA:2018013951
+//Arthur Lopes Saraiva         RA:2020011060
 
 
 //compara se o email e senha são iguais aos utilizados emite alerta de login ou erro.

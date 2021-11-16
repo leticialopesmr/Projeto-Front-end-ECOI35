@@ -1,0 +1,161 @@
+<!-- Pagina de cadastro do projeto .............
+Ana Letícia Lopes Moreira    RA:2018013951
+Arthur Lopes Saraiva         RA:2020011060
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de Cadastro</title>
+  <link rel="stylesheet" href="/css/cadastroStyle.css" />
+  <script src="/JS/cadastroJS.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav id="navBar">
+      <a href="/index.html"><img src="/img/logocb.png" width="120px" height="90px"></a>
+      <ul>
+        <li><a href="#login">Área de Cadastro</a></li>
+      </ul>
+    </nav>
+  <header>
+  <div id="cadastro">
+    <div id="blocoCadastro">
+      <div id="imageCadastro">
+        <img src="/img/imageCadastro.png" width="700vh" height="600vh">
+        <a href="https://storyset.com/group" target="_blank">
+          <p>Group illustrations by Storyset
+        </a></p>
+
+      </div>
+      <div id="formCadastro">
+        <!--Formulario para cadastro -->
+        <h2> Faça seu cadastro:</h2>
+        <form method="post" id="registro">
+
+          <label>Nome</label>
+          <input class="form-control" type="text" name="name" id="name" required /></br>
+
+          <label>E-mail</label>
+          <input class="form-control" type="email" name="email" id="email" required /></br>
+           <!-- No JS ocorre a comparação das senhas-->
+          <label>Senha</label>
+          <input class="form-control" type="password" name="password" id="password" required /></br>
+          <label>Confirme a sua senha</label>
+          <input class="form-control" type="password" name="passwordCheck" id="passwordCheck" required /> </br>
+          <label>Telefone</label>
+          <input class="form-control" type="tel" name="tel" id="tel" required [unmask]="true"
+            [imask]="{mask: '(00) 0 0000-0000'}" /></br>
+
+          <label>Endereço</label>
+          <input class="form-control" type="text" name="address" id="address" required /></br>
+          <label>Nº</label>
+          <input class="form-control" type="text" name="addressNumber" id="addressNumber" required /></br>
+          <label>Complemento</label>
+          <input class="form-control" type="text" name="addressComplement" id="addressComplement" /></br>
+
+
+          <label>Bairro</label>
+          <input class="form-control" type="text" name="district" id="district" required /></br>
+
+
+          <label>Cidade</label>
+          <input class="form-control" type="text" name="city" id="city" required /></br>
+
+          <label>Estado</label>
+          <select class="form-select" type="select" name="state" id="state" required>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select></br>
+
+          <label>CEP</label>
+          <input class="form-control" type="text" name="zipCode" id="zipCode" required [unmask]="true"
+            [imask]="{mask: '00000-000'}" /></br>
+          <input type="submit" value="Cadastrar" onclick="checkForm()" />
+        </form>
+
+        <a href="/login.html">
+          <p>Já tenho cadastro</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer>
+  <!--Footer com redes sociais, email, e link do projeto no github -->
+  <div id="footerSobre">
+    <h4>Sobre o CLUBBOOK</h4>
+    <p><a href="#planos">Assinar</a></br>
+      <a href="mailto:centralclubbook@gmail.com">Fale Conosco</a></br>
+      Cancelamento </br>
+    </p>
+  </div>
+  <div id="footerRedes">
+    <h4>Acompanhe as nossas Redes Sociais </h4></br>
+    <a href="https://www.facebook.com/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+      </svg></a>
+    <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <circle cx="12" cy="12" r="3" />
+        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+      </svg></a>
+    <a href="https://github.com/leticialopesmr/Projeto-Front-end-ECOI35" target="_blank"><svg
+        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+      </svg></a>
+    <h4>Confira nossas formas de pagamento</h4></br>
+    <p>Para outras bandeiras, contate nossa <a href="mailto:centralclubbook@gmail.com"> Central de Atendimento.</a></p>
+  </div>
+  <div id="footerLogo">
+    <img src="/img/logocb.png" width="200px" height="130px">
+    <p>2021 CLUBBOOK - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</html>

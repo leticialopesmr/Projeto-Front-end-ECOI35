@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Jura', sans-serif;
+  background: white;
+  height: 10vh;
+  color: #8b008b;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#navBar ul {
+  display: flex;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+#navBar ul li {
+  display: inline-block;
+  padding-top: 25px;
+}
+
+#navBar ul li :hover {
+  display: inline-block;
+  padding: 10px;
+  background-color: #b8860b;
+  border: black;
+  border-radius: 15px;
+  color: white;
+}
+
+#navBar ul li :active {
+  display: inline-block;
+  padding: 10px;
+  background-color: #8b008b;
+  border: black;
+  border-radius: 15px;
+  color: white;
+}
+
+#login {
+  background-image: url(/img/bliblioteca2.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+#loginBloco {
+  display: flex;
+  flex-direction: row;
+}
+
+#imageLogin {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+}
+#loginForm {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  width: 50vh;
+  height: 60vh;
+}
+
+#loginForm p {
+  padding-top: 5vh;
+}
+
+#loginForm h2 {
+  font-size: 40px;
+  padding: 5vh;
+  font-family: 'Concert One', cursive;
+}
+
+.form-group {
+  padding: 1vh;
+  font-weight: bold;
+}
+
+button {
+  font-size: 15px;
+  height: 5vh;
+  width: 14vh;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  height: 20vh;
+}
+#footerSobre h4 {
+  font-size: 20px;
+}
+#footerRedes h4 {
+  font-size: 20px;
+
+}
+
+#footerSobre {
+  width: 45vh;
+}
+#footerRedes {
+  padding-left: 20vh;
+  padding-right: 20vh;
+}

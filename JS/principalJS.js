@@ -1,5 +1,6 @@
 // Pagina JS da pagina index.html .............
 //Ana Letícia Lopes Moreira    RA:2018013951
+//Arthur Lopes Saraiva         RA:2020011060
 
 function cadastrarEmail() {
   var email = document.getElementById("email").value;

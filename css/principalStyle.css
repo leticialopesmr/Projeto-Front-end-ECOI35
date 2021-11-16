@@ -192,6 +192,15 @@ body {
   text-align: center;
   color: white;
   font-weight: bold;
+#inicial h1{
+    padding-top: 150px;
+    font-size: 100px;
+    color: orange;
+}
+#inicial p{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 196, 0);
 }
 
 #planos {
@@ -337,4 +346,8 @@ footer {
 #footerRedes {
   padding-left: 20vh;
   padding-right: 20vh;
+}
+  
+#footerRedes h2{
+    font-size: 25px;
 }
